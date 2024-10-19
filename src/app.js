@@ -10,7 +10,7 @@ addEventListener("DOMContentLoaded", () => {
     const header = Header();
     const containerMain = AppMain();
     const videoBg = videoBackground();
-    app.appendChild(header);
+    containerMain.prepend(header);
     app.appendChild(videoBg);
     app.appendChild(containerMain);
 })

@@ -76,7 +76,7 @@ export default defineConfig({
             tag: 'meta',
             attrs: {
               name: 'twitter:image',
-              content: 'https://raw.githubusercontent.com/gxstavo19k/Neon-Eva-fan-Page-fullJS/main/docs/.github/meta-preview.png',
+              content: 'https://raw.githubusercontent.com/gxstavo19k/Neon-Eva-fan-Page-fullJS/gh-pages/docs/.github/meta-preview.png',
             },
           },
           {
