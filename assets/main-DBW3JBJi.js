@@ -45,4 +45,4 @@
     title="Evangelion Logo" />
     `;const{buttonElement:o,navigation:a}=f();return e.appendChild(o),e.appendChild(a),e},b=()=>{let e="https://github.com/gustavo19k/assets-SouKick/raw/main/1o-projeto-web/background-video.mp4",o=document.createElement("div");return o.className="bg-video",o.innerHTML=` <video class="video" autoplay muted loop>
          <source src="${e}" type="video/mp4" />
-       </video>`,o};addEventListener("DOMContentLoaded",()=>{d();const e=document.querySelector("#app"),o=h(),a=c(),i=b();e.appendChild(o),e.appendChild(i),e.appendChild(a)});
+       </video>`,o};addEventListener("DOMContentLoaded",()=>{d();const e=document.querySelector("#app"),o=h(),a=c(),i=b();a.prepend(o),e.appendChild(i),e.appendChild(a)});
