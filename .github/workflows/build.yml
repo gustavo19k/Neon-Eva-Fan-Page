@@ -6,7 +6,7 @@ on:
       - main  
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +23,13 @@ jobs:
 
     - name: Build project
       run: npm run build
+
+    - name: Check for changes in build output
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git fetch origin gh-pages
+        git diff --exit-code ./dist || echo "Changes detected in ./dist, proceeding with deploy."
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4  
